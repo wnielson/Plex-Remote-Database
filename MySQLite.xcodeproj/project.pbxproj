@@ -6,8 +6,46 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		EA7DFFD21BD7079900EADF09 /* mysqlite.c in Sources */ = {isa = PBXBuildFile; fileRef = EA7DFFD01BD7079900EADF09 /* mysqlite.c */; settings = {ASSET_TAGS = (); }; };
+		EA7DFFD51BD708E200EADF09 /* libmysqlclient.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EA7DFFD41BD708E200EADF09 /* libmysqlclient.dylib */; };
+		EA7DFFD71BD7256F00EADF09 /* libjansson.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EA7DFFD61BD7256F00EADF09 /* libjansson.dylib */; };
+		EA7DFFE01BD8271100EADF09 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = EA7DFFDF1BD8271100EADF09 /* main.c */; };
+		EA7DFFE61BD8276500EADF09 /* libMySQLite.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EA7DFFC91BD7077000EADF09 /* libMySQLite.dylib */; };
+		EA7DFFE81BD827CC00EADF09 /* test.db in CopyFiles */ = {isa = PBXBuildFile; fileRef = EA7DFFE71BD8279600EADF09 /* test.db */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EA7DFFE41BD8275E00EADF09 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EA7DFFC11BD7077000EADF09 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EA7DFFC81BD7077000EADF09;
+			remoteInfo = MySQLite;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EA7DFFDB1BD8271100EADF09 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+				EA7DFFE81BD827CC00EADF09 /* test.db in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		EA7DFFC91BD7077000EADF09 /* libMySQLite.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libMySQLite.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA7DFFD01BD7079900EADF09 /* mysqlite.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mysqlite.c; sourceTree = "<group>"; };
+		EA7DFFD41BD708E200EADF09 /* libmysqlclient.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libmysqlclient.dylib; path = /usr/local/lib/libmysqlclient.dylib; sourceTree = "<absolute>"; };
+		EA7DFFD61BD7256F00EADF09 /* libjansson.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libjansson.dylib; path = /usr/local/lib/libjansson.dylib; sourceTree = "<absolute>"; };
+		EA7DFFDD1BD8271100EADF09 /* test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = test; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA7DFFDF1BD8271100EADF09 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		EA7DFFE71BD8279600EADF09 /* test.db */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test.db; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -15,6 +53,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA7DFFD51BD708E200EADF09 /* libmysqlclient.dylib in Frameworks */,
+				EA7DFFD71BD7256F00EADF09 /* libjansson.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA7DFFDA1BD8271100EADF09 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA7DFFE61BD8276500EADF09 /* libMySQLite.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -24,6 +72,9 @@
 		EA7DFFC01BD7077000EADF09 = {
 			isa = PBXGroup;
 			children = (
+				EA7DFFD01BD7079900EADF09 /* mysqlite.c */,
+				EA7DFFD81BD7257600EADF09 /* Libraries */,
+				EA7DFFDE1BD8271100EADF09 /* test */,
 				EA7DFFCA1BD7077000EADF09 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -32,8 +83,27 @@
 			isa = PBXGroup;
 			children = (
 				EA7DFFC91BD7077000EADF09 /* libMySQLite.dylib */,
+				EA7DFFDD1BD8271100EADF09 /* test */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		EA7DFFD81BD7257600EADF09 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				EA7DFFD61BD7256F00EADF09 /* libjansson.dylib */,
+				EA7DFFD41BD708E200EADF09 /* libmysqlclient.dylib */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		EA7DFFDE1BD8271100EADF09 /* test */ = {
+			isa = PBXGroup;
+			children = (
+				EA7DFFDF1BD8271100EADF09 /* main.c */,
+				EA7DFFE71BD8279600EADF09 /* test.db */,
+			);
+			path = test;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -66,6 +136,24 @@
 			productReference = EA7DFFC91BD7077000EADF09 /* libMySQLite.dylib */;
 			productType = "com.apple.product-type.library.dynamic";
 		};
+		EA7DFFDC1BD8271100EADF09 /* test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA7DFFE11BD8271100EADF09 /* Build configuration list for PBXNativeTarget "test" */;
+			buildPhases = (
+				EA7DFFD91BD8271100EADF09 /* Sources */,
+				EA7DFFDA1BD8271100EADF09 /* Frameworks */,
+				EA7DFFDB1BD8271100EADF09 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EA7DFFE51BD8275E00EADF09 /* PBXTargetDependency */,
+			);
+			name = test;
+			productName = test;
+			productReference = EA7DFFDD1BD8271100EADF09 /* test */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -76,6 +164,9 @@
 				ORGANIZATIONNAME = "Weston Nielson";
 				TargetAttributes = {
 					EA7DFFC81BD7077000EADF09 = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+					EA7DFFDC1BD8271100EADF09 = {
 						CreatedOnToolsVersion = 7.0.1;
 					};
 				};
@@ -93,6 +184,7 @@
 			projectRoot = "";
 			targets = (
 				EA7DFFC81BD7077000EADF09 /* MySQLite */,
+				EA7DFFDC1BD8271100EADF09 /* test */,
 			);
 		};
 /* End PBXProject section */
@@ -102,10 +194,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA7DFFD21BD7079900EADF09 /* mysqlite.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA7DFFD91BD8271100EADF09 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA7DFFE01BD8271100EADF09 /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EA7DFFE51BD8275E00EADF09 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EA7DFFC81BD7077000EADF09 /* MySQLite */;
+			targetProxy = EA7DFFE41BD8275E00EADF09 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		EA7DFFCB1BD7077000EADF09 /* Debug */ = {
@@ -191,6 +300,11 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				EXECUTABLE_PREFIX = lib;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					"/usr/local/Cellar/mysql-connector-c/6.1.6/include",
+				);
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -201,6 +315,25 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				EXECUTABLE_PREFIX = lib;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					"/usr/local/Cellar/mysql-connector-c/6.1.6/include",
+				);
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		EA7DFFE21BD8271100EADF09 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EA7DFFE31BD8271100EADF09 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -222,6 +355,14 @@
 			buildConfigurations = (
 				EA7DFFCE1BD7077000EADF09 /* Debug */,
 				EA7DFFCF1BD7077000EADF09 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EA7DFFE11BD8271100EADF09 /* Build configuration list for PBXNativeTarget "test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA7DFFE21BD8271100EADF09 /* Debug */,
+				EA7DFFE31BD8271100EADF09 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
