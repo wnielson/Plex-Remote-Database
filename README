@@ -3,3 +3,5 @@ A "drop-in" replacement SQLite library for accessing a MySQL server.
 
 The basic idea is to provide an SQLite compatible interface that actually uses MySQL
 as the database backend instead.
+
+Join the chat at https://gitter.im/wnielson/Plex-Remote-Database
